@@ -1,0 +1,118 @@
+body{
+    background-color: #f4f3f3;
+}
+.gen {
+    margin-top: 10px;
+    margin-left: 31px;
+    margin-right: 31px;
+}
+
+.toop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.topo h1 {
+    color: #711460;
+    font-weight: 700px;
+    font-size: 36px;
+}
+
+.topo-btn button{
+    background-color: #711460;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.hero {
+    background-color: #ffffff;
+    margin-top: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 10px;
+    padding-top: 20px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 40px;
+    row-gap: 25px;
+    margin-top: 20px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-item h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+}
+
+.detail-item p {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+.progress-track {
+  width: 100%;
+  height: 24px;
+  background: #F3F3F3;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #910E7A;
+  transition: width 0.3s ease;
+}
+
+.btn.success {
+  background-color: #0C9509;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  width: 90px;
+  height: 30px;
+  margin-top: 35px;
+  margin-bottom: 54px;
+}
+
+.btnv {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn.success:hover:not(:disabled) {
+  background-color: #0A7E07;
+}
+
+.table-wrapper {
+    margin-top: 24px;
+}
+.table-color{
+    
+}
+
+.tsk {
+    margin-top: 18px;
+}

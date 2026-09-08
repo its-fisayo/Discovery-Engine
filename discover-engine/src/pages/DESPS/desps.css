@@ -1,0 +1,31 @@
+.ral {
+    margin-top: 10px;
+    margin-left: 31px;
+    margin-right: 31px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left h1 {
+    color: #711460;
+    font-weight: 700px;
+    font-size: 36px;
+}
+
+.right button{
+    background-color: #711460;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+

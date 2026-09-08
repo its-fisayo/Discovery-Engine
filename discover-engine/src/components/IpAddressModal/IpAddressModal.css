@@ -1,0 +1,143 @@
+.ip-modal-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+.ip-modal-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0 0 24px 0;
+}
+
+.ip-modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 32px;
+}
+
+.ip-modal-field-full {
+  grid-column: 1 / -1;
+}
+
+.ip-modal-field label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.ip-modal-field p {
+  margin: 0;
+  font-size: 15px;
+  color: #111111;
+}
+
+.ip-status-pill {
+  display: inline-block;
+  padding: 4px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid;
+}
+
+.ip-status-pill.active {
+  color: #0C9509;
+  border-color: #0C9509;
+  background: transparent;
+}
+
+.ip-status-pill.inactive {
+  color: #B91C1C;
+  border-color: #B91C1C;
+  background: transparent;
+}
+
+/* Nodes / Open Ports dropdowns */
+.ip-modal-select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #111111;
+  background: #ffffff;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.ip-modal-select:focus {
+  border-color: #711460;
+}
+
+/* Device Drive custom dropdown */
+.device-drive-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.device-drive-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  font-size: 14px;
+  color: #111111;
+  cursor: pointer;
+}
+
+.device-drive-toggle:hover {
+  border-color: #711460;
+}
+
+.device-drive-arrow {
+  transition: transform 0.15s ease;
+  color: #6b7280;
+}
+
+.device-drive-arrow.open {
+  transform: rotate(180deg);
+}
+
+.device-drive-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.device-drive-option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  border: none;
+  background: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.device-drive-option:hover {
+  background: #f3f4f6;
+}
+
+.device-drive-option.selected {
+  background: #f3e8f2;
+  color: #711460;
+  font-weight: 600;
+}
+
+.device-drive-option + .device-drive-option {
+  border-top: 1px solid #f0f0f0;
+}

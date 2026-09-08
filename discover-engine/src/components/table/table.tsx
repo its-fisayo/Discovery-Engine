@@ -30,6 +30,7 @@ type TableProps<T extends { id: string | number }> = {
   className?: string;
   renderMobileItem?: (row: T) => React.ReactNode;
   actionsRender?: (row: T) => React.ReactNode;
+  onRowClick?: (row: T) => void;
 };
 
 export default function Table<T extends { id: string | number }>({
@@ -44,6 +45,7 @@ export default function Table<T extends { id: string | number }>({
   onPageSizeChange,
   renderMobileItem,
   actionsRender,
+  onRowClick,
 }: TableProps<T>) {
   const currentData = data || [];
 
@@ -90,7 +92,10 @@ export default function Table<T extends { id: string | number }>({
               : currentData.map((row) => (
                   <tr
                     key={row.id}
-                    className="border-b border-gray-100 text-sm hover:bg-[#faf5fb] h-14"
+                    onClick={() => onRowClick?.(row)}
+                    className={`border-b border-gray-100 text-sm hover:bg-[#faf5fb] h-14 ${
+                      onRowClick ? "cursor-pointer" : ""
+                    }`}
                   >
                     {columns.map((col) => (
                       <td
